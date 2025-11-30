@@ -4,248 +4,192 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Credits.Creditcard – How Credits, Balances & Point-Like Systems Work</title>
-  <meta name="description" content="Understand what 'credits' mean in card ecosystems: issuer credits, reward credits, statement credits and internal balance adjustments. Neutral, documentation-style overview." />
+  <title>Credits.Creditcard – Understanding Credit Limits, Line Increases & Responsible Usage</title>
+  <meta name="description" content="Learn how credit limits work, how issuers decide your initial limit, how increases are evaluated, and what impacts your credit utilization and future approvals." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://credits.creditcard/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Credits.Creditcard – Credits & Balance Adjustments Explained" />
-  <meta property="og:description" content="Learn how credits, statement adjustments, issuer reimbursements and reward credits work inside modern card systems." />
+  <meta property="og:title" content="Credits.Creditcard – Credit Limits & Responsible Usage Explained" />
+  <meta property="og:description" content="Independent explainer on credit limits, utilization, increases, issuer evaluations and how your usage shapes approvals and credit health." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://credits.creditcard/" />
   <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=credits.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Credits.Creditcard – Credits & Balance Adjustments Explained" />
-  <meta name="twitter:description" content="Neutral explanation of issuer credits, reward credits, statement adjustments and internal balance corrections." />
+  <meta name="twitter:title" content="Credits.Creditcard – Credit Limits & Responsible Usage Explained" />
+  <meta name="twitter:description" content="Understand how credit limits are set, how increases work, and what issuers look for when evaluating your account." />
   <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=credits.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-64FE63JQ3H');
   </script>
 
-  <!-- Tailwind for utility classes -->
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Shared minisite styles -->
   <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body class="bg-slate-950 text-slate-100">
-  <header class="site-header">
-    <div class="nav-inner max-w-6xl">
-      <div class="brand">
-        <div class="cc-logo">CC</div>
-        <div class="brand-text">
-          <div class="brand-title">Credits.Creditcard</div>
-          <div class="brand-subtitle">Credits & Balance Adjustments Explained</div>
-        </div>
+
+<header class="site-header">
+  <div class="nav-inner max-w-6xl">
+    <div class="brand">
+      <div class="cc-logo">CC</div>
+      <div class="brand-text">
+        <div class="brand-title">Credits.Creditcard</div>
+        <div class="brand-subtitle">Credit Limits & Line Increases</div>
       </div>
-      <nav class="nav-links" aria-label="Page navigation">
-        <a href="#overview">Overview</a>
-        <a href="#mechanics">Types</a>
-        <a href="#compare">Compare</a>
-      </nav>
     </div>
-  </header>
+    <nav class="nav-links">
+      <a href="#overview">Overview</a>
+      <a href="#limits">Credit Limits</a>
+      <a href="#increases">Increases</a>
+    </nav>
+  </div>
+</header>
 
-  <main class="cc-page">
+<main class="cc-page">
 
-    <!-- Breadcrumb -->
-    <div class="cc-breadcrumb">
-      <a href="https://choose.creditcard/?utm_source=credits.creditcard&utm_medium=referral&utm_campaign=breadcrumb">Home</a>
-      &nbsp;›&nbsp;
-      Credits.Creditcard
-    </div>
+  <!-- Breadcrumb -->
+  <div class="cc-breadcrumb">
+    <a href="https://choose.creditcard/?utm_source=credits.creditcard&utm_medium=referral&utm_campaign=breadcrumb">Home</a>
+    &nbsp;›&nbsp;
+    Credits.Creditcard
+  </div>
 
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1>How Credits Work in Card Ecosystems</h1>
-        <p class="hero-lead">
-          “Credits” can mean many different things inside a card system — statement credits, reward credits, issuer reimbursements and internal balance adjustments. This page explains each category in clear, factual terms.
-        </p>
-        <a class="cta" href="https://choose.creditcard/rewards/?utm_source=credits.creditcard&utm_medium=referral&utm_campaign=hero_cta">
-          Explore the Rewards &amp; Points hub
-        </a>
-      </div>
-    </section>
-
-    <!-- Overview -->
-    <section id="overview" class="section">
-      <h2>What Are “Credits” on a Card Account?</h2>
-      <p>The term “credits” is used in card ecosystems to describe any positive adjustment to an account balance or reward ledger. A credit can come from the issuer, a merchant, a loyalty program or an automated system reacting to transaction rules.</p>
-      <p>Credits may lower your statement balance, increase a reward total, offset a fee or correct an earlier posting error — but each type follows different rules and timelines.</p>
-    </section>
-
-    <!-- Types / Mechanics -->
-    <section id="mechanics" class="section">
-      <h2>Main Types of Card Credits</h2>
-      <p>Credits can be grouped into a few broad categories. Each appears in different places in your account activity.</p>
-
-      <ul class="list">
-        <li><strong>Statement credits</strong> – applied directly to your current balance, often from promotions or reimbursements.</li>
-        <li><strong>Reward credits</strong> – points, miles or cashback accumulated through transactions.</li>
-        <li><strong>Issuer service credits</strong> – automatic refunds for disputes, network errors or merchant adjustments.</li>
-        <li><strong>Merchant credits</strong> – refunds issued when a product is returned or corrected.</li>
-        <li><strong>Internal balance corrections</strong> – system adjustments when transaction data is revised.</li>
-      </ul>
-
-      <p>Each type is handled differently by the issuer, and credits may take anywhere from seconds to several business days to appear.</p>
-    </section>
-
-    <!-- Additional section -->
-    <section class="section">
-      <h2>How Credits Interact With Fees and Rewards</h2>
-      <p>Some credits reduce your card balance but do not affect your rewards total. Others reverse earlier rewards or add new ones depending on the issuer’s rules.</p>
-      <p>Fee reimbursements (such as travel or subscription credits) may have usage windows, category restrictions or annual limits. Documentation usually specifies the exact conditions and posting expectations.</p>
-    </section>
-
-    <!-- Another section -->
-    <section class="section">
-      <h2>Timing, Posting and Visibility</h2>
-      <p>Credits do not always post in real time. Depending on the origin, a credit may be processed through:</p>
-      <ul class="list">
-        <li>Merchant refund channels</li>
-        <li>Issuer-led manual adjustments</li>
-        <li>Loyalty-program batch updates</li>
-        <li>Automated posting engines</li>
-      </ul>
-      <p>Understanding posting delays helps explain why a credit may appear later than expected.</p>
-    </section>
-
-    <!-- Comparison Table -->
-    <section id="compare" class="section">
-      <h2>Compare Types of Credits</h2>
-      <div class="table-wrap">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Credit Type</th>
-              <th>Where It Appears</th>
-              <th>Why It Matters</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Statement Credit</td>
-              <td>Account balance section</td>
-              <td>Directly reduces what you owe this cycle.</td>
-            </tr>
-            <tr>
-              <td>Reward Credit</td>
-              <td>Points/miles/cashback ledger</td>
-              <td>Adds to long-term loyalty value.</td>
-            </tr>
-            <tr>
-              <td>Service Credit</td>
-              <td>Adjustments or issuer notices</td>
-              <td>Used for disputes and error correction.</td>
-            </tr>
-            <tr>
-              <td>Merchant Credit</td>
-              <td>Reversal of prior transaction</td>
-              <td>Restores funds after a return or cancellation.</td>
-            </tr>
-            <tr>
-              <td>Internal Correction</td>
-              <td>Back-office logs</td>
-              <td>Fixes posting mismatches or timing issues.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p class="small">
-        For a full overview of how rewards and credits are structured, visit
-        <a href="https://choose.creditcard/rewards/?utm_source=credits.creditcard&utm_medium=referral&utm_campaign=comparison_section">
-          the Rewards &amp; Points hub
-        </a>.
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>How Credit Limits Work — And How Issuers Decide Them</h1>
+      <p class="hero-lead">
+        Every credit card comes with a fixed credit limit. This page explains how issuers set it, how increases work, what affects eligibility, and how your usage influences future approvals.
       </p>
-    </section>
-
-    <!-- Cluster Links -->
-    <section class="section">
-      <h2>Explore Related Rewards &amp; Points Microsites</h2>
-      <div class="cluster-grid">
-
-        <a class="cluster-card" href="https://rewarded.creditcard/?utm_source=credits.creditcard&utm_medium=referral&utm_campaign=cluster_rewarded">
-          <h3>Rewarded.Creditcard</h3>
-          <p>How reward systems post credits and reversals.</p>
-        </a>
-
-        <a class="cluster-card" href="https://point.creditcard/?utm_source=credits.creditcard&utm_medium=referral&utm_campaign=cluster_point">
-          <h3>Point.Creditcard</h3>
-          <p>How points are calculated and credited.</p>
-        </a>
-
-        <a class="cluster-card" href="https://perk.creditcard/?utm_source=credits.creditcard&utm_medium=referral&utm_campaign=cluster_perk">
-          <h3>Perk.Creditcard</h3>
-          <p>Perk-style credits and issuer benefit structures.</p>
-        </a>
-
-        <a class="cluster-card" href="https://swap.creditcard/?utm_source=credits.creditcard&utm_medium=referral&utm_campaign=cluster_swap">
-          <h3>Swap.Creditcard</h3>
-          <p>How credits and rewards convert between ecosystems.</p>
-        </a>
-
-        <a class="cluster-card" href="https://list.creditcard/?utm_source=credits.creditcard&utm_medium=referral&utm_campaign=cluster_list">
-          <h3>List.Creditcard</h3>
-          <p>How lists categorize and credit-value features.</p>
-        </a>
-
-      </div>
-    </section>
-
-    <!-- Collection Section -->
-    <section class="section">
-      <h2>Part of The CreditCard Collection</h2>
-      <p class="small">
-        Credits.Creditcard is one spoke in <strong>The CreditCard Collection</strong> — a network of microsites operated by ronarn AS. Each page explains a single concept and connects you to wider educational hubs.
-      </p>
-      <p class="small">
-        We summarize documentation, describe credit types and link to external sources for full terms. We do not issue cards or provide personalized recommendations.
-      </p>
-      <p class="small">
-        This page is informational only and does not provide financial, tax, investment or legal advice.
-      </p>
-
-      <!-- Rewards Hub Snippet -->
-      <p class="text-xs text-slate-500 mt-6">
-        For a broader overview of reward structures, visit the
-        <a href="https://choose.creditcard/rewards/?utm_source=credits.creditcard&utm_medium=referral&utm_campaign=hub_rewards"
-          class="font-medium hover:text-slate-900">
-          Rewards &amp; Points hub
-        </a>
-        on <a href="https://choose.creditcard/" class="font-medium hover:text-slate-900">Choose.Creditcard</a>.
-      </p>
-    </section>
-
-    <!-- Bottom CTA -->
-    <section class="section">
-      <h2>Ready to Explore Reward Credits?</h2>
-      <p class="small">
-        Credits are one building block — the full Rewards &amp; Points hub shows how points, cashback and credits connect across categories.
-      </p>
-      <a class="cta" href="https://choose.creditcard/rewards/?utm_source=credits.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
-        Visit the Rewards &amp; Points hub
+      <a class="cta" href="https://choose.creditcard/?utm_source=credits.creditcard&utm_medium=referral&utm_campaign=hero_cta">
+        Compare cards that fit your credit profile
       </a>
-    </section>
+    </div>
+  </section>
 
-  </main>
 
-  <footer class="mini-footer">
-    <p class="mini-footer-main">© 2025 The CreditCard Collection — ronarn AS</p>
-    <p class="mini-footer-contact">
-      Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
+  <!-- SECTION 1 -->
+  <section id="overview" class="section">
+    <h2>What Is a Credit Limit?</h2>
+    <p>
+      A credit limit is the maximum balance you can carry on your card. It’s based on your income, credit history, spending patterns and the issuer’s risk model. High-limit cards handle more monthly expenses and reduce your utilization, which may improve your credit score over time.
     </p>
-  </footer>
+    <p>
+      Limits vary widely between issuers. Some fintech cards start low but increase quickly with good behavior. Traditional banks tend to be conservative but predictable.
+    </p>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section id="limits" class="section">
+    <h2>How Issuers Decide Your Initial Limit</h2>
+    <p>Before approving a card, issuers evaluate:</p>
+
+    <ul>
+      <li>Your income & monthly obligations</li>
+      <li>Your credit score and payment history</li>
+      <li>Your utilization on existing cards</li>
+      <li>Account age and number of open cards</li>
+      <li>Internal risk-scoring models</li>
+    </ul>
+
+    <p>
+      Even if two people have the same score, their limits can differ significantly depending on spending patterns and internal issuer profiles.
+    </p>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section id="increases" class="section">
+    <h2>How Credit Limit Increases Work</h2>
+    <p>
+      Many issuers review accounts automatically every 3–12 months. A strong pattern of responsible usage often leads to automatic increases.
+    </p>
+
+    <p>You may qualify for a limit increase when:</p>
+
+    <ul>
+      <li>You consistently pay on time</li>
+      <li>Your utilization stays below ~30%</li>
+      <li>Your income increases</li>
+      <li>Your credit score improves</li>
+      <li>Your overall debt decreases</li>
+    </ul>
+
+    <p>
+      Some requests trigger a hard credit check. Others use a soft check — depending on the issuer.
+    </p>
+  </section>
+
+  <!-- CLUSTER LINKS -->
+  <section class="section">
+    <h2>Explore Related Credit Topics</h2>
+    <div class="cluster-grid">
+
+      <a class="cluster-card" href="https://limits.creditcard/?utm_source=credits.creditcard&utm_medium=referral&utm_campaign=cluster_limits">
+        <h3>Limits.Creditcard</h3>
+        <p>How spending limits work and how they evolve.</p>
+      </a>
+
+      <a class="cluster-card" href="https://creditscore.creditcard/?utm_source=credits.creditcard&utm_medium=referral&utm_campaign=cluster_creditscore">
+        <h3>CreditScore.Creditcard</h3>
+        <p>Factors that influence credit health over time.</p>
+      </a>
+
+      <a class="cluster-card" href="https://improved.creditcard/?utm_source=credits.creditcard&utm_medium=referral&utm_campaign=cluster_improved">
+        <h3>Improved.Creditcard</h3>
+        <p>How improved credit unlocks better cards.</p>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- COLLECTION + HUB SNIPPET -->
+  <section class="section">
+    <h2>Part of The CreditCard Collection</h2>
+    <p class="small">
+      Credits.Creditcard is part of a network of focused educational microsites designed to explain each component of
+      the credit-card ecosystem in plain language.
+    </p>
+
+    <!-- Correct SNIPPET -->
+    <div class="hub-link">
+      <a href="https://choose.creditcard/credit-score/?utm_source=credits.creditcard&utm_medium=referral&utm_campaign=minisite_to_hub"
+         class="text-sm text-slate-600 hover:text-slate-900">
+        Learn more at the Credit Score hub
+      </a>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="section">
+    <h2>Ready to Compare Cards by Credit Profile?</h2>
+    <p class="small">
+      Browse the main Choose.Creditcard hub to compare cards by limit ranges, eligibility, score requirements and cost.
+    </p>
+    <a class="cta" href="https://choose.creditcard/?utm_source=credits.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
+      Go to Choose.Creditcard
+    </a>
+  </section>
+
+</main>
+
+<footer class="mini-footer">
+  <p class="mini-footer-main">© 2025 The CreditCard Collection — ronarn AS</p>
+  <p class="mini-footer-contact">
+    Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
+  </p>
+</footer>
 
 </body>
 </html>
